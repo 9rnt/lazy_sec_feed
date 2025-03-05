@@ -112,7 +112,7 @@ def main():
                 feed_url = feed_config.get('feed')
                 if feed_url:
                     try:
-                        entries = read_rss_feed(feed_url, '2025-03-04')
+                        entries = read_rss_feed(feed_url)
                         
                         if not entries:
                             print(f"No entries found for {feed_type} feed.")
